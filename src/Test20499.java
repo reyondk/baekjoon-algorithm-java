@@ -31,15 +31,22 @@ hasu
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Test20499 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
-		double a = n - (n * 0.22);
-		double b = (n * 0.8) + ((n * 0.2) - ((n * 0.2) * 0.22));
-		System.out.println((int) a + " " + (int) b);
+		StringTokenizer st = new StringTokenizer(br.readLine(), "/");
+		int k = Integer.parseInt(st.nextToken());
+		int d = Integer.parseInt(st.nextToken());
+		int a = Integer.parseInt(st.nextToken());
+		
+		if (k + a < d || d == 0) {
+			System.out.println("hasu");
+		} else {
+			System.out.println("gosu");
+		}
 	}
 
 }
