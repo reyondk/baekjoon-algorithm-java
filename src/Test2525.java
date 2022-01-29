@@ -31,6 +31,8 @@ KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간�
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.time.LocalTime;
+import java.util.StringTokenizer;
 
 public class Test2525 {
 
